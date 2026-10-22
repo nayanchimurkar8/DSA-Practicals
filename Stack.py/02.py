@@ -1,4 +1,4 @@
-# Stack implementation using a linked list.
+# Stack ,adding Pop function.
 class Node:
     def __init__(self, value):
         self.data = value
