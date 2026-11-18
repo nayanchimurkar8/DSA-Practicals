@@ -1,11 +1,8 @@
-
 # Reversing Queue using Stack
-
 class Node:
     def __init__(self,data):
         self.data=data
         self.next=None
-
 
 class Stack:
     def __init__(self):
@@ -23,7 +20,6 @@ class Stack:
             self.top=self.top.next
             temp.next=None
             return temp
-
 
 class Queue:
     def __init__(self):
@@ -43,22 +39,16 @@ class Queue:
         else:
             temp=self.front
             self.front=self.front.next
-
             if self.front==None:
                 self.rear=None
-
             temp.next=None
             return temp
 
     def display(self):
         temp=self.front
-
         while temp:
             print(temp.data,end=" ")
             temp=temp.next
-
-
-# Main Program
 
 q=Queue()
 s=Stack()
