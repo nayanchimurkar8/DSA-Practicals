@@ -60,14 +60,9 @@ q.enqueue(Node(40))
 
 print("Original Queue")
 q.display()
-
-# Queue to Stack
 while q.front:
     s.push(q.dequeue())
-
-# Stack to Queue
 while s.top:
     q.enqueue(s.pop())
-
 print("\nReversed Queue")
 q.display()
